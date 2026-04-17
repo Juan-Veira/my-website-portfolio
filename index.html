@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Juan Camilo Veira Domínguez — Data Analyst portfolio. SQL, Python, R, Power BI, Looker Studio, BigQuery, dbt." />
+  <meta property="og:title" content="Juan Camilo Veira — Data Analyst" />
+  <meta property="og:description"
+    content="Portfolio of Juan Camilo Veira Domínguez, Data Analyst specializing in dashboards, KPI reporting, and analytics engineering." />
+  <meta property="og:type" content="website" />
+
+  <!-- Security -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' https://s3.amazonaws.com; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none';" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <title>Juan Camilo Veira — Data Analyst</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="nav-header">
+    <nav class="nav-inner container">
+      <a href="https://github.com/Juan-Veira?tab=repositories" target="_blank" rel="noopener noreferrer"
+        class="nav-logo">Juan-Veira</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== HERO / ABOUT ===== -->
+  <section id="about" class="section hero-section">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Juan Camilo<br />Veira Domínguez</h1>
+        <p class="hero-title">Data Analyst</p>
+        <p class="hero-bio">
+          Data Analyst with a Marketing background and strong hands-on skills in SQL,
+          Python, R, Power BI, and Looker Studio. Pipeline-oriented. I focus on automating
+          the flow from raw data to actionable reports, with growing experience in Analytics
+          Engineering using DBT and a cloud data warehouse.
+        </p>
+        <div class="hero-social">
+          <a href="https://linkedin.com/in/juan-veira/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="GITHUB_PROFILE_URL" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:camilovcorp@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <a href="#projects" class="btn btn--primary">View My Work <i class="fas fa-arrow-down"></i></a>
+      </div>
+
+      <div class="hero-skills">
+        <p class="hero-skills__label">Skills</p>
+        <div class="hero-skills-grid">
+          <div class="skill-group">
+            <h3 class="skill-group__label">
+              <i class="fas fa-code"></i> Languages
+            </h3>
+            <div class="skill-group__badges">
+              <span class="skill-badge">SQL</span>
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">R</span>
+              <span class="skill-badge">HTML</span>
+              <span class="skill-badge">JavaScript</span>
+              <span class="skill-badge">Markdown</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group__label">
+              <i class="fas fa-table"></i> Spreadsheets & Tools
+            </h3>
+            <div class="skill-group__badges">
+              <span class="skill-badge">Advanced Excel</span>
+              <span class="skill-badge">Google Sheets</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group__label">
+              <i class="fas fa-chart-bar"></i> Visualization
+            </h3>
+            <div class="skill-group__badges">
+              <span class="skill-badge">Power BI</span>
+              <span class="skill-badge">Looker Studio</span>
+              <span class="skill-badge">Tableau</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group__label">
+              <i class="fas fa-database"></i> Data Engineering
+            </h3>
+            <div class="skill-group__badges">
+              <span class="skill-badge">DBT</span>
+              <span class="skill-badge">BigQuery</span>
+              <span class="skill-badge">Git</span>
+              <span class="skill-badge">GitHub</span>
+              <span class="skill-badge">Agile</span>
+              <span class="skill-badge">Scrum</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider" aria-hidden="true">
+    <span class="section-divider__line"></span>
+    <span class="section-divider__icon"><i class="fas fa-chart-line"></i></span>
+    <span class="section-divider__line"></span>
+  </div>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">The projects I’ve done and I’m currently working on.</p>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Cocoa Market Analysis -->
+        <article class="project-card">
+          <div class="card-accent-bar card-accent-bar--teal"></div>
+          <div class="card-preview">
+            <img src="Docs/Images/Cocoa.gif" alt="Cocoa Market Analysis preview" class="card-gif" />
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3 class="card-title">Colombian &amp; Global Cocoa Market Analysis</h3>
+              <span class="badge badge--complete">Completed</span>
+            </div>
+            <p class="card-date"><i class="fas fa-calendar-alt"></i> Sep 2025 – Feb 2026</p>
+            <p class="card-desc">
+              A Data Analysis project applying a structured 5-phase framework to a real business case,
+              delivering actionable insights by connecting global market dynamics with business strategy
+              helping to understand how global dynamics impact the business and how to take advantage of them.
+              <a href="https://github.com/Juan-Veira/cocoa_artesanal_market_analysis/blob/main/README.md"
+                target="_blank" rel="noopener noreferrer" class="card-inline-link">README summary</a>
+            </p>
+            <div class="tech-stack">
+              <span class="tech-badge">Excel</span>
+              <span class="tech-badge">R</span>
+              <span class="tech-badge">SQL</span>
+              <span class="tech-badge">RMarkdown</span>
+              <span class="tech-badge">GitHub Pages</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://juan-veira.github.io/cocoa_artesanal_market_analysis/" target="_blank"
+                rel="noopener noreferrer" class="btn btn--outline">
+                Project Page <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Data Jobs Dashboard -->
+        <article class="project-card">
+          <div class="card-accent-bar card-accent-bar--indigo"></div>
+          <div class="card-preview">
+            <img src="Docs/Images/V1_Dashboard_Overview.gif" alt="Data Jobs Dashboard preview" class="card-gif" />
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3 class="card-title">Data Jobs Market Dashboard</h3>
+              <span class="badge badge--complete">Completed</span>
+            </div>
+            <p class="card-date"><i class="fas fa-calendar-alt"></i> Dec 2025 – Jan 2026</p>
+            <p class="card-desc">
+              Interactive multi-page Power BI dashboard analyzing the global data job market.
+              Features dynamic slicers, KPI indicators, and a clear narrative to support
+              career decision-making based on market trends and role-specific insights.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-badge">Power BI</span>
+              <span class="tech-badge">DAX</span>
+              <span class="tech-badge">Data Modeling</span>
+            </div>
+            <a href="https://github.com/Juan-Veira/PowerBI_Projects" target="_blank" rel="noopener noreferrer"
+              class="btn btn--outline">
+              <i class="fas fa-file-powerpoint"></i> Power BI Dashboard
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3: dbt Analytics Engineering (In Progress) -->
+        <article class="project-card project-card--wip">
+          <div class="card-accent-bar card-accent-bar--amber"></div>
+          <div class="card-preview card-preview--placeholder">
+            <span class="card-preview__text"><i class="fas fa-clock"></i> Preview coming soon</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <h3 class="card-title">Analytics Engineering Pipeline</h3>
+              <span class="badge badge--wip">
+                <span class="badge__pulse"></span> In Progress
+              </span>
+            </div>
+            <p class="card-date"><i class="fas fa-calendar-alt"></i> 2026 – Present</p>
+            <p class="card-desc">
+              An end-to-end BPO analytics pipeline that simulates real BPO operations, covering synthetic data
+              generation, automated ingestion into BigQuery on GCP, dbt transformations with staging and marts
+              layers, and executive dashboards in Plotly Dash and Power BI.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">DBT</span>
+              <span class="tech-badge">BigQuery</span>
+              <span class="tech-badge">SQL</span>
+              <span class="tech-badge">Data Modeling</span>
+            </div>
+            <button class="btn btn--disabled" disabled>
+              <i class="fas fa-clock"></i> Coming Soon
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATES ===== -->
+  <section id="certificates" class="section certificates-section">
+    <div class="container">
+      <h2 class="section-title">Certificates</h2>
+      <p class="section-subtitle">Education and professional development</p>
+    </div>
+
+    <div class="cert-carousel-wrapper">
+      <div class="cert-carousel-track">
+
+        <!-- ── Original set ── -->
+        <div class="cert-card">
+          <div class="cert-img-wrap">
+            <img
+              src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~7338U86J4JIK/CERTIFICATE_LANDING_PAGE~7338U86J4JIK.jpeg"
+              alt="Google Data Analytics Certificate" class="cert-img" />
+            <div class="cert-img-fallback"><i class="fas fa-certificate"></i></div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Google Data Analytics Certificate</h3>
+            <p class="cert-issuer"><i class="fab fa-google"></i> Google</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrap">
+            <img src="Docs/Images/cert-talento.jpg" alt="Data Analysis and Visualization Certificate"
+              class="cert-img" />
+            <div class="cert-img-fallback"><i class="fas fa-chart-bar"></i></div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Data Analysis and Visualization</h3>
+            <p class="cert-issuer"><i class="fas fa-university"></i> Talento Tech Valle</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrap">
+            <img src="Docs/Images/cert-mintic.jpg" alt="Web Application Developer Certificate" class="cert-img" />
+            <div class="cert-img-fallback"><i class="fas fa-laptop-code"></i></div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Web Application Developer</h3>
+            <p class="cert-issuer"><i class="fas fa-university"></i> MinTic · Univ. Industrial de Santander</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrap">
+            <img src="Docs/Images/uao_logo.jpg" alt="Marketing and International Business Certificate"
+              class="cert-img" />
+            <div class="cert-img-fallback"><i class="fas fa-globe-americas"></i></div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Marketing and International Business</h3>
+            <p class="cert-issuer"><i class="fas fa-university"></i> Universidad Autónoma de Occidente</p>
+          </div>
+        </div>
+
+        <!-- ── Duplicate set for seamless loop ── -->
+        <div class="cert-card">
+          <div class="cert-img-wrap">
+            <img
+              src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~7338U86J4JIK/CERTIFICATE_LANDING_PAGE~7338U86J4JIK.jpeg"
+              alt="Google Data Analytics Certificate" class="cert-img" />
+            <div class="cert-img-fallback"><i class="fas fa-certificate"></i></div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Google Data Analytics Certificate</h3>
+            <p class="cert-issuer"><i class="fab fa-google"></i> Google</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrap">
+            <img src="Docs/Images/cert-talento.jpg" alt="Data Analysis and Visualization Certificate"
+              class="cert-img" />
+            <div class="cert-img-fallback"><i class="fas fa-chart-bar"></i></div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Data Analysis and Visualization</h3>
+            <p class="cert-issuer"><i class="fas fa-university"></i> Talento Tech Valle</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrap">
+            <img src="Docs/Images/cert-mintic.jpg" alt="Web Application Developer Certificate" class="cert-img" />
+            <div class="cert-img-fallback"><i class="fas fa-laptop-code"></i></div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Web Application Developer</h3>
+            <p class="cert-issuer"><i class="fas fa-university"></i> MinTic · Univ. Industrial de Santander</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrap">
+            <img src="Docs/Images/cert-uao.jpg" alt="Marketing and International Business Certificate"
+              class="cert-img" />
+            <div class="cert-img-fallback"><i class="fas fa-globe-americas"></i></div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Marketing and International Business</h3>
+            <p class="cert-issuer"><i class="fas fa-university"></i> Universidad Autónoma de Occidente</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="container contact-grid">
+
+      <!-- Info + CTA -->
+      <div class="contact-info">
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="contact-intro">
+          I'm open to new opportunities, freelance projects, and collaborations.
+          Feel free to reach out!
+        </p>
+        <ul class="contact-details">
+          <li>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:camilovcorp@gmail.com">camilovcorp@gmail.com</a>
+          </li>
+          <li>
+            <i class="fab fa-linkedin"></i>
+            <a href="https://linkedin.com/in/juan-veira/" target="_blank"
+              rel="noopener noreferrer">linkedin.com/in/juan-veira</a>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Colombia</span>
+          </li>
+        </ul>
+        <a href="mailto:camilovcorp@gmail.com" class="contact-email-btn">
+          <i class="fas fa-paper-plane"></i> Send me an email
+        </a>
+      </div>
+
+      <!-- Illustration -->
+      <div class="contact-illustration" aria-hidden="true">
+        <svg viewBox="0 0 380 310" xmlns="http://www.w3.org/2000/svg" class="contact-svg">
+          <defs>
+            <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#14B8A6" stop-opacity="0.35" />
+              <stop offset="100%" stop-color="#14B8A6" stop-opacity="0" />
+            </linearGradient>
+            <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#818CF8" />
+              <stop offset="100%" stop-color="#14B8A6" />
+            </linearGradient>
+            <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="rgba(20,31,53,0.95)" />
+              <stop offset="100%" stop-color="rgba(8,14,28,0.95)" />
+            </linearGradient>
+          </defs>
+
+          <!-- Main card -->
+          <rect x="0" y="0" width="380" height="310" rx="16" fill="url(#cardGrad)" stroke="rgba(20,184,166,0.2)"
+            stroke-width="1" />
+
+          <!-- Header -->
+          <circle cx="22" cy="22" r="6" fill="#FF5F57" />
+          <circle cx="40" cy="22" r="6" fill="#FBBF24" />
+          <circle cx="58" cy="22" r="6" fill="#34D399" />
+          <text x="190" y="27" text-anchor="middle" font-size="10" fill="rgba(148,163,184,0.6)"
+            font-family="Inter,sans-serif" font-weight="500">Analytics Overview</text>
+          <line x1="0" y1="42" x2="380" y2="42" stroke="rgba(30,41,59,0.8)" stroke-width="1" />
+
+          <!-- KPI row -->
+          <rect x="16" y="54" width="100" height="56" rx="10" fill="rgba(20,184,166,0.06)"
+            stroke="rgba(20,184,166,0.18)" stroke-width="1" />
+          <text x="66" y="76" text-anchor="middle" font-size="18" font-weight="700" fill="#14B8A6"
+            font-family="Inter,sans-serif">5+</text>
+          <text x="66" y="94" text-anchor="middle" font-size="8" fill="#64748B" font-family="Inter,sans-serif"
+            letter-spacing="0.5">YRS EXPERIENCE</text>
+
+          <rect x="128" y="54" width="100" height="56" rx="10" fill="rgba(129,140,248,0.06)"
+            stroke="rgba(129,140,248,0.18)" stroke-width="1" />
+          <text x="178" y="76" text-anchor="middle" font-size="18" font-weight="700" fill="#818CF8"
+            font-family="Inter,sans-serif">2.4M</text>
+          <text x="178" y="94" text-anchor="middle" font-size="8" fill="#64748B" font-family="Inter,sans-serif"
+            letter-spacing="0.5">ROWS PROCESSED</text>
+
+          <rect x="240" y="54" width="124" height="56" rx="10" fill="rgba(251,191,36,0.06)"
+            stroke="rgba(251,191,36,0.18)" stroke-width="1" />
+          <text x="302" y="76" text-anchor="middle" font-size="18" font-weight="700" fill="#FBBF24"
+            font-family="Inter,sans-serif">↑ 18%</text>
+          <text x="302" y="94" text-anchor="middle" font-size="8" fill="#64748B" font-family="Inter,sans-serif"
+            letter-spacing="0.5">KPI GROWTH</text>
+
+          <!-- Chart container -->
+          <rect x="16" y="122" width="348" height="172" rx="10" fill="rgba(4,8,18,0.5)" stroke="rgba(30,41,59,0.5)"
+            stroke-width="1" />
+
+          <!-- Y-axis labels -->
+          <text x="30" y="148" font-size="7" fill="rgba(100,116,139,0.7)" font-family="Inter,sans-serif">100</text>
+          <text x="30" y="188" font-size="7" fill="rgba(100,116,139,0.7)" font-family="Inter,sans-serif">60</text>
+          <text x="30" y="228" font-size="7" fill="rgba(100,116,139,0.7)" font-family="Inter,sans-serif">20</text>
+
+          <!-- Grid lines -->
+          <line x1="50" y1="145" x2="356" y2="145" stroke="rgba(30,41,59,0.6)" stroke-width="1"
+            stroke-dasharray="3 4" />
+          <line x1="50" y1="185" x2="356" y2="185" stroke="rgba(30,41,59,0.6)" stroke-width="1"
+            stroke-dasharray="3 4" />
+          <line x1="50" y1="225" x2="356" y2="225" stroke="rgba(30,41,59,0.6)" stroke-width="1"
+            stroke-dasharray="3 4" />
+          <line x1="50" y1="265" x2="356" y2="265" stroke="rgba(30,41,59,0.4)" stroke-width="1" />
+
+          <!-- Area fill -->
+          <path
+            d="M52,240 C90,220 110,210 140,195 C170,180 195,200 220,175 C245,150 270,165 300,140 C320,125 340,130 356,118 L356,265 L52,265 Z"
+            fill="url(#areaGrad)" />
+
+          <!-- Line -->
+          <path
+            d="M52,240 C90,220 110,210 140,195 C170,180 195,200 220,175 C245,150 270,165 300,140 C320,125 340,130 356,118"
+            fill="none" stroke="url(#lineGrad)" stroke-width="2.5" stroke-linecap="round" />
+
+          <!-- Data points -->
+          <circle cx="52" cy="240" r="4" fill="#818CF8" stroke="rgba(8,14,28,0.9)" stroke-width="2" />
+          <circle cx="140" cy="195" r="4" fill="#14B8A6" stroke="rgba(8,14,28,0.9)" stroke-width="2" />
+          <circle cx="220" cy="175" r="4" fill="#14B8A6" stroke="rgba(8,14,28,0.9)" stroke-width="2" />
+          <circle cx="300" cy="140" r="4" fill="#14B8A6" stroke="rgba(8,14,28,0.9)" stroke-width="2" />
+          <circle cx="356" cy="118" r="5" fill="#FBBF24" stroke="rgba(8,14,28,0.9)" stroke-width="2" />
+
+          <!-- Tooltip on last point -->
+          <rect x="322" y="98" width="54" height="20" rx="5" fill="rgba(251,191,36,0.15)" stroke="rgba(251,191,36,0.4)"
+            stroke-width="1" />
+          <text x="349" y="112" text-anchor="middle" font-size="8" fill="#FBBF24" font-family="Inter,sans-serif"
+            font-weight="700">▲ Peak</text>
+
+          <!-- X labels -->
+          <text x="52" y="280" text-anchor="middle" font-size="7" fill="rgba(100,116,139,0.6)"
+            font-family="Inter,sans-serif">Jan</text>
+          <text x="140" y="280" text-anchor="middle" font-size="7" fill="rgba(100,116,139,0.6)"
+            font-family="Inter,sans-serif">Mar</text>
+          <text x="220" y="280" text-anchor="middle" font-size="7" fill="rgba(100,116,139,0.6)"
+            font-family="Inter,sans-serif">Jun</text>
+          <text x="300" y="280" text-anchor="middle" font-size="7" fill="rgba(100,116,139,0.6)"
+            font-family="Inter,sans-serif">Sep</text>
+          <text x="356" y="280" text-anchor="middle" font-size="7" fill="rgba(100,116,139,0.6)"
+            font-family="Inter,sans-serif">Dec</text>
+        </svg>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; <span id="year"></span> Juan Camilo Veira Domínguez. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://linkedin.com/in/juan-veira/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="GITHUB_PROFILE_URL" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+            class="fab fa-github"></i></a>
+        <a href="mailto:camilovcorp@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -392,12 +392,20 @@ svg {
   gap: 16px;
 }
 
+.hero-skills-grid .skill-group:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
 .skill-group {
   background: rgba(20, 31, 53, 0.7);
   border: 1px solid rgba(30, 41, 59, 0.8);
   border-radius: var(--radius-lg);
   padding: 24px;
   transition: border-color var(--transition), box-shadow var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .skill-group:hover {
@@ -414,6 +422,7 @@ svg {
   margin-bottom: 16px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
 }
 
@@ -424,6 +433,7 @@ svg {
 .skill-group__badges {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 8px;
 }
 
